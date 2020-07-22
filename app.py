@@ -5,6 +5,7 @@ from views.users import user_blueprint
 from views.stores import store_blueprint
 from views.alerts import alert_blueprint
 from dotenv import load_dotenv
+from common.database import Database
 
 app = Flask(__name__)
 app.secret_key = os.urandom(64)
